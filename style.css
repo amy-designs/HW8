@@ -1,7 +1,7 @@
 
     .GSAPBody, .GSAPLowerBody {
         display: grid;
-        align-items: center;
+        align-items: top;
         width: 100%;
         height: 100vh;
     }
@@ -9,7 +9,7 @@
     .GSAPBody {
         grid-template-columns: 3fr 2fr;
         gap: 1em;
-        padding: 3em;
+        padding: 6em;
     }
 
     .GSAPSVG {
@@ -20,12 +20,15 @@
     }
 
     .GSAPHeader {
-        padding-top: 17vh;
-        margin: 8vw;
+        margin-left: 8vw;
         align-items: center;
+        padding-top: 6rem;
     }
 
-  
+  .GSAPLowerBody {
+      display: flex;
+      justify-content: center;
+  }
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -152,6 +155,7 @@ body {
     color: #fff;
     }
 
+
     iframe {
     left: calc((100% - 560px)/2);
     height: 315px;
@@ -231,7 +235,7 @@ body {
     justify-content: center;
     }
 
-    .NavText {
+    .NavText, .progText {
     width: 100%;
     text-align: center;
     color: #FFFFFF;
@@ -239,22 +243,55 @@ body {
     line-height: 1.5rem;
     }
 
-    .NavSocial {
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    padding: 10%;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    .progSocial {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .progSocialDiv {
+        display: flex;
+        justify-content: center;
     }
 
-    .NavSocialWrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: fit-content;
+    .socialWrapper {
+        display: grid;
+        justify-content: right;
+        left: 90vw;
+        position: fixed;
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+        width: 20%;
+        height: auto;
+    }
+
+    .socialDiv img {
+        width: 45%;
+    }
+    
+    #progressWrapper {
+        display: grid;
+        justify-content: center;
+        position: fixed;
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+        width: 50%;
+    }
+
+    .progDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .progText {
+        width: 100%;
+        text-align: center;
     }
 
 
@@ -285,4 +322,18 @@ body {
         position: fixed;
         border-radius: 15px;
         
+    }
+
+    .GSAPLowerBody {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        width: 100vw;
+        height: auto;
+    }
+
+    #scrollHeader img {
+        width: 60vw;
+        height: auto;
+        padding: 2rem;
     }
