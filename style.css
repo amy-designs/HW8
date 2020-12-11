@@ -1,0 +1,277 @@
+
+    .GSAPBody, .GSAPLowerBody {
+        display: grid;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .GSAPBody {
+        grid-template-columns: 3fr 2fr;
+        gap: 1em;
+        padding: 3em;
+    }
+
+    .GSAPSVG {
+        display: grid;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .GSAPHeader {
+        padding-top: 17vh;
+        margin: 8vw;
+        align-items: center;
+    }
+
+  
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center, div,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, header, output, ruby, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box
+    }
+
+body {
+    background-image: url("circle1.svg");
+    background-repeat: no-repeat;
+    background-position: right 0 top 24vh;
+    background-size: 90%;
+}
+
+    html {
+        font-size: calc(12px + (28 - 12) * ((100vw - 300px) / (1900 - 300)));
+      }
+
+    h1 {
+    color: #FFFFFF;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    }
+
+    h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    }
+
+    h3 {
+    text-align: left;
+    line-height: 1vw;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 2vw;
+    text-decoration: none;
+    }
+
+    h4 {
+        padding-top: 3vh;
+        text-align: left;
+        line-height: 1rem;
+        color:grey;
+        font-family: Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.7rem;
+        text-decoration: none;
+    }
+
+    h5 {
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.01rem;
+    word-spacing: 0.02rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1rem;
+    text-align: center;
+    text-decoration: none;
+    }
+
+    p {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 1.5em;
+    }
+
+    .description{
+    padding: 0.5% 2.5%;
+    }
+
+    p.quote {
+    line-height: 0.5em;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    }
+
+    p.overview {
+    color: #fff;
+    }
+
+    body {
+    font-family: Helvetica, sans-serif;
+    }
+
+    a {
+    color: #fff;
+    }
+
+    iframe {
+    left: calc((100% - 560px)/2);
+    height: 315px;
+    width: 560px;
+    }
+
+    .SideMenuFrame {
+    top: 0;
+    width: 100%;
+    height: 10em;
+    padding: 1.5%;
+    z-index: 3;
+    position: fixed;
+    }
+
+    .SideMenuFrame-M {
+    top: 0;
+    width: 100%;
+    height: 10em;
+    padding: 1.5%;
+    z-index: 3;
+    position: fixed;
+    }
+
+    .SideMenuWrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 5fr 4fr;
+    grid-gap: 2%;
+    }
+
+    #PortPic {
+        display: flex;
+        justify-content: left;
+        margin-left: 11vw;
+    }
+    .SideMenuWrapper-M {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .PortPic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .PortDivSection {
+    display: block;
+    padding: 5em;
+    width: 100%;
+    min-height: 100vh;
+    }
+
+    .NavList {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 1fr;
+    grid-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .NavDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .NavText {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.65rem;
+    line-height: 1.5rem;
+    }
+
+    .NavSocial {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .NavSocialWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    }
+
+
+    .IntroGrid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1%;
+    }
+
+    .IntroText {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1.5em;
+    }
+
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #fff;
+        position: fixed;
+        border-radius: 15px;
+        
+    }
