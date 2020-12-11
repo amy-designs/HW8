@@ -1,5 +1,6 @@
 document.onmousemove = animateCircles;
 
+//Cursor Animation//
 function animateCircles(event) {
     var circle = document.createElement('div');
     circle.setAttribute('class', 'circle');
@@ -22,4 +23,32 @@ function animateCircles(event) {
         }, 300);
 };
 
+
+//Greensock Animations//
+jQuery(function() {
+    gsap.registerPlugin(scrollTrigger);
+    gsap.set($(".GSAPBody").add(".GSAPLowerBody"), {css: {opacity: 0}});
+    gsap.to($(".GSAPBody").add(".GSAPLowerBody"), {css: {opacity: 1},
+                                                   duration: 1,
+                                                   delay: 1});
+
+    gsap.to($("#scrollHeader"), {css: {color: "white"},
+                                scrollTrigger: {
+                                    trigger: "#scrollHeader",
+                                    start: "top center"
+                                },
+                                duration: 1});
+
+    $(".NavText").on("mouseenter", function() {
+        gsap.to($(this), {css: {color: "white", fontSize: "1em"},
+                            duration: 0.25});
+    });
+
+    $(".NavText").on("mouseleave", function() {
+        gsap.to($(this), {css: {color: "white", fontSize: "0.8em"},
+                            duration: 0.25});
+    });
+
+    
+})
 

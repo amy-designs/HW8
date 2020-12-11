@@ -71,19 +71,29 @@ body {
     }
 
     h2 {
-    text-align: center;
-    color: #FFFFFF;
-    font-family: Helvetica, sans-serif;
-    text-decoration: none;
+        color: #FFFFFF;
+        text-align: center;
+        letter-spacing: 0.01rem;
+        word-spacing: 0.02rem;
+        font-family: Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1rem;
+        text-align: center;
+        text-decoration: none;
     }
 
     h3 {
-    text-align: left;
-    line-height: 1vw;
-    color: #FFFFFF;
-    font-family: Helvetica, sans-serif;
-    font-size: 2vw;
-    text-decoration: none;
+        color: #FFFFFF;
+        text-align: center;
+        letter-spacing: 0.01rem;
+        word-spacing: 0.02rem;
+        font-family: Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1rem;
+        text-align: center;
+        text-decoration: none;
     }
 
     h4 {
@@ -180,6 +190,7 @@ body {
         justify-content: left;
         margin-left: 11vw;
     }
+
     .SideMenuWrapper-M {
     display: grid;
     width: 100%;
