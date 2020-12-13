@@ -14,32 +14,64 @@
 
 <body style="background-color:#000000; height: 100%; display: block">
     
+    <!-- <span id="mouse-circle" class="mouse-circle"></span> -->
+    
     <div id="HomeSideMenu" class="SideMenuFrame">
         
         <div id="MenuGrid" class="SideMenuWrapper">
-          <div id="IntroWrapper" class="IntroGrid">
-            <div id="PortPic" class="PortPic">
-              <a href="#"><img src="logo.svg" id="PortTitle" alt="logo"></a>
+            <div id="IntroWrapper" class="IntroGrid">
+                <div id="PortPic" class="PortPic">
+                <a href="#"><img src="logo.svg" id="PortTitle" alt="logo"></a>
+                </div>
             </div>
-          </div>
-          
-          <div id="PortNav" class="NavList">
-            <div class="NavDiv">
-                <a href="#"><h2 class="NavText">Portfolio</h2></a>
+            
+            <div id="PortNav" class="NavList">
+                <div class="NavDiv">
+                    <a href="#scrollHeader"><h2 class="NavText">Portfolio</h2></a>
+                </div>
+                <div class="NavDiv">
+                    <a href="#"><h2 class="NavText">About</h2></a>
+                </div>
+                <div class="NavDiv">
+                    <a href="#"><h2 class="NavText">Side Projects</h2></a>
+                </div> 
+            
             </div>
-            <div class="NavDiv">
-                <a href="#"><h2 class="NavText">About</h2></a>
-            </div>
-            <div class="NavDiv">
-                <a href="#"><h2 class="NavText">Side Projects</h2></a>
-            </div> 
-          
-        </div>
         
         </div>
-      </div>
+    </div>
 
 
+<div class="menu">
+    <a href="#" class="menu-link">
+      <span class="hamburger-icon">
+        <span class="hamburger-bar hamburger-bar-1"></span>
+        <span class="hamburger-bar hamburger-bar-2"></span>
+        <span class="hamburger-bar hamburger-bar-3"></span>
+      </span>
+    </a>
+  </div>
+  
+  <div class="menu-overlay">
+    <nav class="overlay-menu">
+      <form class="search-form">
+        <input type="text" name="search" placeholder="Search..">
+      </form>
+      <ul class="one">
+        <li><a class="nav-links" href="#">Home</a></li>
+        <li><a class="nav-links" href="#">About</a></li>
+        <li><a class="nav-links" href="#">Work</a></li>
+        <li><a class="nav-links" href="#">Contact</a></li>
+      </ul>
+      <div>
+        <ul>
+          <li class="display-inline"><a class="social-round-icon" href="#"><i class="fa fa-codepen"></i></a></li>
+          <li class="display-inline"><a class="social-round-icon" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li class="display-inline"><a class="social-round-icon" href="#"><i class="fa fa-dribbble"></i></a></li>
+        </ul>
+      <div>
+    </nav>
+  </div>
 
     <div class="GSAPBody">
         <div class="GSAPHeader" id="GSAPHeader">
@@ -56,7 +88,7 @@
                 <a href="#"><h2 class="progText" id="progAbout">About</h2></a>
             </div>
             <div class="progDiv">
-                <a href="#"><h2 class="progText" id="progPort">Portfolio</h2></a>
+                <a href="#scrollHeader"><h2 class="progText" id="progPort">Portfolio</h2></a>
             </div>
         </div>
 
@@ -77,11 +109,11 @@
 
     <div class="GSAPLowerBody">
         <div id="scrollHeader">
-            <div class="hyton">
-                <img src="hyton.png" id="hyton" alt="hyton">
+            <div class="project">
+                <img src="hyton.png" class="proj" id="hyton" alt="hyton">
             </div>
-            <div class="ixd">
-                <img src="ixd.png" id="ixd" alt="ixd project">
+            <div class="project">
+                <img src="ixd.png" class="proj" id="ixd" alt="ixd project">
             </div>
     </div>
     </div>
