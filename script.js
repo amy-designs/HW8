@@ -9,11 +9,19 @@ jQuery(function() {
                                                    duration: 1,
                                                    delay: 1});
 
+
+//Scroll to Portfolio
+gsap.set($("#progPort"), {css: {color: "white", opacity: 0}});
+gsap.set($("#progAbout"), {css: {color: "white", opacity: 0}});
+gsap.set($("#progSide"), {css: {color: "white", opacity: 0}});
+
+
     gsap.to($("#PortNav"), {css: {opacity: 0},
                                 scrollTrigger: {
                                     trigger: "#scrollHeader",
                                     start: "top center",
-                                    toggleActions: "restart none none reverse"
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
                                 },
                                 duration: 0.3});
 
@@ -21,51 +29,128 @@ jQuery(function() {
                                 scrollTrigger: {
                                     trigger: "#scrollHeader",
                                     start: "top center",
-                                    toggleActions: "restart none none reverse"
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
                                 },
                                 duration: 0.3});
 
-    gsap.to($("#progAbout"), {css: {color: "white", opacity: 0.7},
+    gsap.to($("#progAbout"), {css: {color: "white", opacity: 0.6},
                                 scrollTrigger: {
                                     trigger: "#scrollHeader",
                                     start: "top center",
-                                    toggleActions: "restart none none reverse"
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
                                 },
                                 duration: 0.3});
 
-    gsap.to($("#progSide"), {css: {color: "white", opacity: 0.7},
+    gsap.to($("#progSide"), {css: {color: "white", opacity: 0.6},
                                 scrollTrigger: {
                                     trigger: "#scrollHeader",
                                     start: "top center",
-                                    toggleActions: "restart none none reverse"
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
                                 },
                                 duration: 0.3});
 
-    if (width > 1024) {
+    gsap.to($("#scrollHeader"), {css: {opacity: 1},
+                                        scrollTrigger: {
+                                            trigger: "#scrollHeader",
+                                            start: "top center",
+                                            toggleActions: "restart none none reverse"
+                                        },
+                                        duration: 1});
+//Back to Portfolio
+
+
+
+//Scroll to About
+    gsap.to($("#progPort"), {css: {color: "white", opacity: 0.6},
+                                scrollTrigger: {
+                                    trigger: "#aboutSection",
+                                    start: "top center",
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
+                                },
+                                duration: 0.3});
+    gsap.to($("#progSide"), {css: {color: "white", opacity: 0.6},
+                                scrollTrigger: {
+                                    trigger: "#aboutSection",
+                                    start: "top center",
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
+                                },
+                                duration: 0.3});
+    gsap.to($("#progAbout"), {css: {color: "white", opacity: 1},
+                                scrollTrigger: {
+                                    trigger: "#aboutSection",
+                                    start: "top center",
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
+                                },
+                                duration: 0.3});
+
+
+//Scroll to Side Proj
+    gsap.to($("#progAbout"), {css: {color: "white", opacity: 0.6},
+                                scrollTrigger: {
+                                    trigger: "#sideProjects",
+                                    start: "top center",
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
+                                },
+                                duration: 0.3});
+    gsap.to($("#progSide"), {css: {color: "white", opacity: 1},
+                                scrollTrigger: {
+                                    trigger: "#sideProjects",
+                                    start: "top center",
+                                    end: "bottom center",
+                                    toggleActions: "restart none restart reverse"
+                                },
+                                duration: 0.3});
+    gsap.to($("#scrollHeader"), {css: {opacity: 1},
+                                        scrollTrigger: {
+                                            trigger: "#sideProjects",
+                                            start: "top center",
+                                            toggleActions: "restart none none reverse"
+                                        },
+                                        duration: 1});
+    //Hover Animations
 
         $(".progText").on("mouseenter", function() {
-            gsap.to($(this), {css: {fontSize: "1.15vw"},
+            gsap.to($(this), {css: {fontSize: "0.75rem"},
                                 duration: 0.25});
         });
 
         $(".progText").on("mouseleave", function() {
-            gsap.to($(this), {css: {fontSize: "1vw"},
+            gsap.to($(this), {css: {fontSize: "0.65rem"},
                                 duration: 0.25});
 
         });
+
+        $(".portLink").on("mouseenter", function() {
+            gsap.to($(this), {css: {fontSize: "0.75rem"},
+                                duration: 0.25});
+        });
+
+        $(".portLink").on("mouseleave", function() {
+            gsap.to($(this), {css: {fontSize: "0.65rem"},
+                                duration: 0.25});
+
+        });
+
         $(".NavText").on("mouseenter", function() {
-            gsap.to($(this), {css: {fontSize: "1.1vw"},
+            gsap.to($(this), {css: {fontSize: "0.75rem"},
                                 duration: 0.25});
         });
 
         $(".NavText").on("mouseleave", function() {
-            gsap.to($(this), {css: {fontSize: "1vw"},
+            gsap.to($(this), {css: {fontSize: "0.65rem"},
                                 duration: 0.25});
 
         });
 
         $(".proj").on("mouseenter", function() {
-            gsap.to($(this), {css: {width: "61vw"},
+            gsap.to($(this), {css: {width: "62vw"},
                                 duration: 0.25});
         });
 
@@ -74,8 +159,8 @@ jQuery(function() {
                                 duration: 0.25});
 
         });
-    }
 
+//Mobile Menu
     $(document).ready(function() {
   
         $(".menu-link").click(function(event) {
@@ -84,6 +169,12 @@ jQuery(function() {
           $(".menu").toggleClass("open");
       
         });
+
+        $(".nav-links").click(function(event) {
+            $(".menu-overlay").toggleClass("open");
+            $(".menu").toggleClass("open");
+        
+          });
           
       });
     

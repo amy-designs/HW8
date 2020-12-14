@@ -3,7 +3,7 @@
 
 
 <head>
-    <!-- 1: Install JQuery, GSAP -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js" integrity="sha512-FtkvR55hPH9dKb4c5j71UgIV8ut79QpPNo4tiJUPXk8fKMmCdmZk9o8/sxpYONZIVJyw3T3KqzAZ2YFEZRWc+g==" crossorigin="anonymous"></script>
@@ -30,10 +30,10 @@
                     <a href="#scrollHeader"><h2 class="NavText">Portfolio</h2></a>
                 </div>
                 <div class="NavDiv">
-                    <a href="#"><h2 class="NavText">About</h2></a>
+                    <a href="#about"><h2 class="NavText">About</h2></a>
                 </div>
                 <div class="NavDiv">
-                    <a href="#"><h2 class="NavText">Side Projects</h2></a>
+                    <a href="#sideProjects"><h2 class="NavText">Side Projects</h2></a>
                 </div> 
             
             </div>
@@ -54,22 +54,18 @@
   
   <div class="menu-overlay">
     <nav class="overlay-menu">
-      <form class="search-form">
-        <input type="text" name="search" placeholder="Search..">
-      </form>
       <ul class="one">
-        <li><a class="nav-links" href="#">Home</a></li>
-        <li><a class="nav-links" href="#">About</a></li>
-        <li><a class="nav-links" href="#">Work</a></li>
-        <li><a class="nav-links" href="#">Contact</a></li>
+        <li><a class="nav-links" href="#scrollHeader">Portfolio</a></li>
+        <li><a class="nav-links" href="#about">About</a></li>
+        <li><a class="nav-links" href="#sideProjects">Side Projects</a></li>
       </ul>
       <div>
         <ul>
-          <li class="display-inline"><a class="social-round-icon" href="#"><i class="fa fa-codepen"></i></a></li>
-          <li class="display-inline"><a class="social-round-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li class="display-inline"><a class="social-round-icon" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li class="display-inline"><a class="nav-links" href="#"><img src="m-email.svg"id="msocial" alt="email"></a></li>
+          <li class="display-inline"><a class="nav-links" href="#"><img src="m-Linkedin.svg" id="msocial" alt="linkedin"></a></li>
+          <li class="display-inline"><a class="nav-links" href="#"><img src="m-Instagram.svg" id="msocial" alt="instagram"></a></li>
         </ul>
-      <div>
+    </div>
     </nav>
   </div>
 
@@ -85,9 +81,9 @@
                 <a href="#"><h2 class="progText" id="progSide">Side Projects</h2></a>
             </div>
             <div class="progDiv">
-                <a href="#"><h2 class="progText" id="progAbout">About</h2></a>
+                <a href="#about"><h2 class="progText" id="progAbout">About</h2></a>
             </div>
-            <div class="progDiv">
+            <div class="progDiv portLink">
                 <a href="#scrollHeader"><h2 class="progText" id="progPort">Portfolio</h2></a>
             </div>
         </div>
@@ -115,10 +111,149 @@
             <div class="project">
                 <img src="ixd.png" class="proj" id="ixd" alt="ixd project">
             </div>
-    </div>
+        </div>
     </div>
 
+<div id="aboutSection">
+    <div class="about" id="about">
+        <div class="aboutGrid">
+            <h3>Education</h3>
+        </div>
+        <div class="aboutGrid info">
+            <h5>Carnegie Mellon University</h5>
+            <p>Master of Human-Computer Interaction</p><br>              
+        </div>
+        <div class="aboutGrid date">
+            <h5>Aug 2020 - 2021</h5>               
+        </div>
 
-    
+        <div class="aboutGrid">
+        </div>
+        <div class="aboutGrid info">
+            <h5>New York University</h5>
+            <p>B.A. in Economics, Double Major in Music</p><br>
+        </div>
+        <div class="aboutGrid date">
+            <h5>May 2020</h5>
+        </div>
+
+        <div class="aboutGrid">
+        </div>
+        <div class="aboutGrid info">
+            <h5>New York University in London</h5> 
+            <p>Steinhardt Global Honors Program</p> 
+        </div>
+        <div class="aboutGrid date">
+            <h5>Mar 2017</h5> 
+        </div>
+
+
+    </div>
+
+    <div class="about" id="about">
+        <div class="aboutGrid">
+            <h3>Tech & Design<br>Experience</h3>
+        </div>
+        <div class="aboutGrid info">
+            <h5>MIMO Movers, Millburn, NJ</h5>
+            <p>Graphic Designer</p><br>              
+        </div>
+        <div class="aboutGrid date">
+            <h5>Aug - Sept 2020</h5>               
+        </div>
+
+        <div class="aboutGrid">
+        </div>
+        <div class="aboutGrid info">
+            <h5>Hyton Financial & Investment Group, New York, NY</h5>
+            <p>Website Designer</p><br>
+        </div>
+        <div class="aboutGrid date">
+            <h5>Jul - Aug 2019</h5>
+        </div>
+
+        <div class="aboutGrid">
+        </div>
+        <div class="aboutGrid info">
+            <h5>Caravan, New York, NY</h5> 
+            <p>Website & Logo Designer</p> 
+        </div>
+        <div class="aboutGrid date">
+            <h5>Aug 2018</h5> 
+        </div>
+
+
+    </div>
+    <div class="about" id="about">
+        <div class="aboutGrid">
+            <h3>Business<br>Experience</h3>
+        </div>
+        <div class="aboutGrid info">
+            <h5>Tylent Inc., New York, NY</h5>
+            <p>Business Consulting Intern</p><br>              
+        </div>
+        <div class="aboutGrid date">
+            <h5>Jun - Aug 2020,
+                <br>Jun - Aug 2019</h5>               
+        </div>
+
+        <div class="aboutGrid">
+        </div>
+        <div class="aboutGrid info">
+            <h5>Hyton Financial & Investment Group, New York, NY</h5>
+            <p>Accounting Intern</p>
+        </div>
+        <div class="aboutGrid date">
+            <h5>Jan - Aug 2018</h5>
+        </div>
+    </div>
+  
+    <div class="about" id="about">
+        <div class="aboutGrid">
+            <h3>Skills & Tools</h3>
+        </div>
+        <div class="aboutGrid info">
+            <h5>UX/UI Design</h5>
+            <p>Figma, Sketch, Invision, Adobe XD, Balsamiq, Protopie</p><br>
+            <h5>Programming</h5>
+            <p>HTML, CSS, Javascript, Python</p><br>
+            
+            <h5>2D Graphic</h5>
+            <p>Adobe Suite (Illustrator, Photoshop, InDesign, Lightroom, After Effects)</p><br> 
+
+            <h5>Exploratory Research</h5>
+            <p>Affinity Diagramming, Behavioral Mapping, Competitive Testing, Contextual Inquiry, Survey</p><br> 
+
+            <h5>Generative Research</h5>
+            <p>Cognitive Mapping, Design Charettes, Experience Prototyping, Participatory Design, Persona Building, Storyboarding, User Journey Mapping</p><br> 
+
+            <h5>Evaluative Research</h5>
+            <p>A/B Testing, Content Analysis, Usability Testing, Wizard of Oz</p>
+ 
+        </div>
+        <div class="aboutGrid date">             
+        </div>
+    </div>
+   
+    <div class="about abSpace" id="about">
+        <div class="aboutGrid">
+        </div>
+        <div class="aboutGrid info">
+        </div>
+        <div class="aboutGrid date">             
+        </div>
+    </div>
+</div>
+
+<div id="sideProjects">
+    <div id="sideDiv">
+        <div class="side">
+            <img src="sideProj.png" class="proj" id="side" alt="side">
+        </div>
+    </div>
+</div>
+
+
+
 </body>
 </html>

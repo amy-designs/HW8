@@ -124,14 +124,13 @@ body {
 
     h5 {
     color: #FFFFFF;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.01rem;
     word-spacing: 0.02rem;
     font-family: Helvetica, sans-serif;
     font-size: 0.8rem;
     font-weight: 600;
     line-height: 1rem;
-    text-align: center;
     text-decoration: none;
     }
 
@@ -228,6 +227,18 @@ body {
     }
    
     @media only screen and (max-width: 768px) {
+        #progressWrapper {
+            display: grid;
+            justify-content: center;
+            position: fixed;
+            top: 50vh;
+            padding: 2rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            transform-origin: 0 0;
+            transform: rotate(-90deg);
+            width: 40%;
+        }
         .NavList {
             display: none;
         };
@@ -257,7 +268,7 @@ body {
             height: 14px;
             margin: auto;
             top: 1.5vh;
-            right: 2vw;
+            right: 4vw;
           }
           
           .hamburger-bar {
@@ -293,7 +304,7 @@ body {
           }
           
           .menu-overlay {
-            background-color: #000000;
+            background-color:	#101010;
             color: #ffffff;
             height: 100%;
             width: 100%;
@@ -312,7 +323,7 @@ body {
           .menu-overlay.open {
             opacity: 1;
             visibility: visible;
-            position: absolute;
+            position: fixed;
           }
           
           .prompt {
@@ -359,51 +370,20 @@ body {
                 position: relative;
                 color: #ffffff;
                 text-decoration: none;
+                font-size: 2rem;
+                font-weight: 600;
                 overflow: hidden;
-          }
-          
-          a.nav-links:hover {
-            background-color:#ffffff;
-            color: #000000;
-            transition: 0.6s;
           }
           
           .display-inline {
               display: inline-block;
-              margin: 0 10px 0 10px;
+
           }
           
-          input[type=text] {
-              width: 130px;
-              border: 2px solid #ffffff;
-              border-radius: 130px;
-              font-size: 16px;
-              background-color: white;
-              margin: 20px;
-              padding: 12px 20px 12px 40px;
-              -webkit-transition: width 0.4s ease-in-out;
-              transition: width 0.4s ease-in-out;
-          }
-          
-          input[type=text]:focus {
-              width: 230px;
-              outline: none;
-          }
-          
-          .social-round-icon {
-            width:45px;
-            height:45px;
-            border:2px solid #ffffff;
-            border-radius: 50%;
-            text-align: center;
-            line-height:inherit;
-            font-size: 40px;
-            padding: 15px;
-          }
           
           a.social-round-icon:hover {
             background-color:#ffffff;
-            color: black;
+            color: white;
             box-shadow: inset 0 0 0 5px #000;
             transition: .3s;
           }   
@@ -415,6 +395,18 @@ body {
 }
 
     @media only screen and (min-width: 769px) {
+        #progressWrapper {
+            display: grid;
+            justify-content: center;
+            position: fixed;
+            top: 80vh;
+            padding: 2rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            transform-origin: 0 0;
+            transform: rotate(-90deg);
+            width: 40%;
+        }
         .NavList {
             display: grid;
             width: 100%;
@@ -479,22 +471,14 @@ body {
 
     .progText {
         opacity: 0;
+        width: 100%;
+        text-align: center;
     }
 
-
-    
-    #progressWrapper {
-        display: grid;
-        justify-content: center;
-        position: fixed;
-        top: 80vh;
-        padding: 2rem;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        transform-origin: 0 0;
-        transform: rotate(-90deg);
-        width: 40%;
+    #progPort, #progAbout, #progSide {
+        opacity: 0;
     }
+
 
     .progDiv {
         display: flex;
@@ -502,11 +486,6 @@ body {
         justify-content: center;
         padding: 1rem;
         white-space: nowrap;
-    }
-
-    .progText {
-        width: 100%;
-        text-align: center;
     }
 
 
@@ -539,7 +518,10 @@ body {
         height: auto;
     }
     #scrollHeader {
+        opacity: 0;
         align-items: center;
+        padding-top: 4vh;
+        padding-bottom: 8vh;
     }
 
     #scrollHeader img {
@@ -554,8 +536,64 @@ body {
         justify-content: center;
     }
 
+    #sideProjects {
+        opacity: 1;
+        align-items: center;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    #sideDiv img {
+        width: 60vw;
+        height: auto;
+        padding: 5vh;
+        padding-top: 0;
+        padding-bottom: 20vh;
+    }
+
+    .side {
+        display: flex;
+        justify-content: center;
+    }
+
     .navbar-toggler.toggler-example {
         cursor: pointer;
         }
 
     
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 0.5fr;
+    padding: 3vw;
+    padding-left: 22vw;
+    padding-right:22vw;
+    text-align: left;
+}
+
+.aboutGrid.info {
+    border-left: 1.5px solid #FFFFFF;
+}
+
+.aboutGrid h3 {
+    text-align: left;
+}
+.aboutGrid p {
+    font-size: 0.5rem;
+}
+
+.aboutGrid h5 {
+    font-size: 0.55rem;
+    letter-spacing: 0.01rem;
+}
+.aboutGrid.info h5, p {
+    padding-left: 2vw;
+    line-height: 1.2rem;
+}
+
+.aboutGrid.date h5 {
+    text-align: right;
+}
+
+.about.abSpace {
+    padding-bottom: 10vh;
+}
