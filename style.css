@@ -392,6 +392,28 @@ body {
               visibility: hidden;
           }
 
+          #sideProjects {
+            opacity: 1;
+            align-items: center;
+            padding-top: 2vh;
+            padding-bottom: 40vh;
+        }
+    
+        #sideDiv img {
+            width: 80vw;
+            height: auto;
+            padding: 5vh;
+            padding-top: 0;
+            padding-bottom: 6vh;
+        }
+
+        #scrollHeader img {
+            width: 80vw;
+            height: auto;
+            padding: 2rem;
+            padding-top: 0;
+        }
+
 }
 
     @media only screen and (min-width: 769px) {
@@ -450,6 +472,27 @@ body {
             min-width: 20px;
         }
 
+        #sideProjects {
+            opacity: 1;
+            align-items: center;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+        }
+    
+        #sideDiv img {
+            width: 60vw;
+            height: auto;
+            padding: 5vh;
+            padding-top: 0;
+            padding-bottom: 20vh;
+        }
+
+        #scrollHeader img {
+            width: 60vw;
+            height: auto;
+            padding: 2rem;
+            padding-top: 0;
+        }
     }
 
    
@@ -524,32 +567,13 @@ body {
         padding-bottom: 8vh;
     }
 
-    #scrollHeader img {
-        width: 60vw;
-        height: auto;
-        padding: 2rem;
-        padding-top: 0;
-    }
 
     .project {
         display: flex;
         justify-content: center;
     }
 
-    #sideProjects {
-        opacity: 1;
-        align-items: center;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-    }
 
-    #sideDiv img {
-        width: 60vw;
-        height: auto;
-        padding: 5vh;
-        padding-top: 0;
-        padding-bottom: 20vh;
-    }
 
     .side {
         display: flex;
@@ -595,5 +619,17 @@ body {
 }
 
 .about.abSpace {
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
+}
+
+#arrow {
+    margin: 5vw;
+    width: 1.5vw;
+    min-width: 20px;
+}
+
+.dhead {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

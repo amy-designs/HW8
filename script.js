@@ -11,6 +11,7 @@ jQuery(function() {
 
 
 //Scroll to Portfolio
+gsap.set($("#portNav"), {css: {color: "white", opacity: 1}});
 gsap.set($("#progPort"), {css: {color: "white", opacity: 0}});
 gsap.set($("#progAbout"), {css: {color: "white", opacity: 0}});
 gsap.set($("#progSide"), {css: {color: "white", opacity: 0}});
@@ -107,7 +108,7 @@ gsap.set($("#progSide"), {css: {color: "white", opacity: 0}});
                                     toggleActions: "restart none restart reverse"
                                 },
                                 duration: 0.3});
-    gsap.to($("#scrollHeader"), {css: {opacity: 1},
+    gsap.to($("#side"), {css: {opacity: 1},
                                         scrollTrigger: {
                                             trigger: "#sideProjects",
                                             start: "top center",
