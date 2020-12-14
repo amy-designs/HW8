@@ -640,6 +640,7 @@ body {
 
 .dheadpic img {
     width: 70%;
+    height:auto;
 }
 
 .dbody {
